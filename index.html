@@ -15,11 +15,21 @@
         <div class="card p-4 shadow rounded-3">
             <h1 class="text-primary mb-4 text-center">Generatore di 10 Email Casuali</h1>
 
+            <div class="row justify-content-center mb-3">
+
+                <div class="col-12 col-md-4">
+
+                    <button id="startButton" onclick="startFetching()" class="btn btn-success w-100">
+                        Genera 10 Email
+                    </button>
+                </div>
+            </div>
             <div id="email-list-container">
-                <p class="text-primary fw-bold text-center">Caricamento email in corso...</p>
+                <p class="text-secondary fw-bold text-center">Premi "Genera 10 Email" per iniziare.</p>
             </div>
         </div>
     </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
 </body>

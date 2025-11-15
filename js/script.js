@@ -14,10 +14,10 @@ function fatchEmail() {
         .then(function (resp) {
             email.push(resp.data.response)
             counter++
-            if(counter === totalEmails){
+            if (counter === totalEmails) {
                 displayContent()
             }
-        
+
         })
 
 }
@@ -31,6 +31,9 @@ function displayContent() {
     container.innerHTML = htmlContent;
 }
 
-for (let i = 0; i < totalEmails; i++) {
-    fatchEmail()
+
+function startFetching() {
+    for (let i = 0; i < totalEmails; i++) {
+        fatchEmail()
+    }
 };
