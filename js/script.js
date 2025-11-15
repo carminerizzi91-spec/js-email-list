@@ -7,6 +7,11 @@ const email = [];
 const container = document.getElementById("email-list-container")
 const totalEmails = 10;
 let counter = 0;
+const startButton = document.getElementById('startButton');
+
+startButton.addEventListener('click', function() {
+    startFetching();
+});
 
 function fatchEmail() {
     axios
