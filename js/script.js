@@ -9,13 +9,13 @@ const totalEmails = 10;
 let counter = 0;
 const startButton = document.getElementById('startButton');
 
-startButton.addEventListener('click', function() {
+startButton.addEventListener('click', function () {
     startFetching();
 });
 
 function fatchEmail() {
     axios
-        .get("https://flynn.boolean.careers/exercises/api/random/mail")
+        .get(apiUri)
         .then(function (resp) {
             email.push(resp.data.response)
             counter++
